@@ -25,6 +25,7 @@
     }
     .fas {color: teal;}
     a { color: black }
+    input[type=checkbox]:checked + label { text-decoration: line-through; }
 
   </style>
   <script src="https://kit.fontawesome.com/7b3b0349cd.js" crossorigin="anonymous"></script>

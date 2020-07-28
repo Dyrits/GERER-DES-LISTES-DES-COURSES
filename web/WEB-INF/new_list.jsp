@@ -11,18 +11,7 @@
 		<jsp:param name="h1" value="Courses - Listes des courses"/>
 		<jsp:param name="h2" value="Création d'une nouvelle liste"/>
 	</jsp:include>
-	<section>
-		<core:if test="${!empty errors}">
-			<div >
-				<p><strong>Une ou plusieurs erreurs sont survenues: </strong></p>
-				<ul>
-					<core:forEach var="code" items="${errors}">
-						<li>${Reader.getMessageError(code)}</li>
-					</core:forEach>
-				</ul>
-			</div>
-		</core:if>
-	</section>
+	<%@include file="./fragments/errors.jsp"%>
 	<section>
 		<form method="post" action="${pageContext.request.contextPath}/addArticle">
 				<core:if test="${empty liste}">

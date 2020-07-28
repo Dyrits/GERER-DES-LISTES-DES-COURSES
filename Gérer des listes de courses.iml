@@ -22,6 +22,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.57" level="application_server_libraries" />
     <orderEntry type="library" name="JSTL" level="project" />
     <orderEntry type="library" name="JDBC" level="project" />
-    <orderEntry type="library" name="7b3b0349cd" level="application" />
+    <orderEntry type="library" name="Font Awesome" level="application" />
+    <orderEntry type="library" name="Tomcat 8.5.57" level="project" />
   </component>
 </module>
