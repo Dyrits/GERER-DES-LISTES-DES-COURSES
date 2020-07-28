@@ -13,6 +13,11 @@
 	</jsp:include>
 	<%@include file="./fragments/errors.jsp"%>
 	<section>
+		<core:if test="${!empty liste}">
+			<p>Nom : ${liste.getName()}</p>
+			<input type="hidden" value="${liste.getIdentifier()}" name="identifier"/>
+			<input type="hidden" value="${liste.getName()}" name="name"/>
+		</core:if>
 		<core:choose>
 			<core:when test="${!empty articles}">
 				<form action="${pageContext.request.contextPath}/basket" method="post">
@@ -24,7 +29,6 @@
 								</li>
 						</core:forEach>
 					</ul>
-					<input type="hidden" value="${liste.getIdentifier()}" name="identifier"/>
 					<button type="submit"><i class="far fa-save"></i></button>
 				</form>
 			</core:when>

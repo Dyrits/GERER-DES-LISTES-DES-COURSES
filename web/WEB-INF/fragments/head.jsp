@@ -14,7 +14,10 @@
       font-size: 24px;
     }
     h3 { margin-bottom: 0; }
-    ul { list-style: none; }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
     button {
       border-radius: 10px 0 10px 0;
       border: 1px solid white;
